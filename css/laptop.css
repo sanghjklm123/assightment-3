@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -26,7 +27,7 @@ section > .container{
 /* banner */
 .img-banner{
     position: relative;
-    background-image: url(/images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -36,14 +37,14 @@ section > .container{
 .text-banner{
     position: absolute;
     top: 25%;
-    left: 40%;
+    width: 100%;
     color: white;
     font-size: 24px;
     text-align: center;
 }
 .text-banner h1 {
     text-transform: uppercase;
-    color: #bdc3c7;
+    color: #fff;
 }
 /* nav-bảr */
 #nav-bar a:link,
@@ -100,7 +101,10 @@ li span{
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
     font-size: 18px;
 }
-
+/* ẩn thông tin */
+#personal-info .section-content{
+    display: none;
+}
 #target{
     padding: 40px 30px;
     background-color: #e7f2f8;
@@ -261,4 +265,29 @@ tr{
     text-decoration: none;
     color: #1d3557;
 }
-    
+    #error-email{
+        color: red;
+        font-weight: 700;
+    }
+
+    #kinhnghiem .job-content,
+    #hocvan .job-content,
+    #hoatdong .job-content,
+    #sothich .job-content,
+    #ngonngu .job-content,
+    #kynang .job-content {
+        display: none;
+
+    }
+    .view-more,
+    .less-more{
+        display: none;
+    }
+    .myrow{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch
+     }
+    h1{
+        font-size: 1.6rem;
+    }

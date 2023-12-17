@@ -1,4 +1,10 @@
 @media (max-width:768px) {
+   section > .container {
+      width: 100%;
+   }
+   .img-banner {
+      height: 300px;
+   }
   .test-nav{
    display: none;
  }
@@ -20,4 +26,10 @@
    border-top: 2px solid #d6c08d;
    padding-top: 20px;
   }
+  .myrow{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   align-items: stretch
+}
+
 }

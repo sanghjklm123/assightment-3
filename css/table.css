@@ -38,4 +38,13 @@ td {
 tr td:first-child {
 width: 25%;
 }
+
+#job-info .container {
+    grid-template-columns: 50% 50%;
+}
+.myrow{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch
+}
 }
